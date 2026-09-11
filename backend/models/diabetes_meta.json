@@ -1,0 +1,101 @@
+{
+  "feature_names": [
+    "pregnancies",
+    "glucose",
+    "blood_pressure",
+    "skin_thickness",
+    "insulin",
+    "bmi",
+    "diabetes_pedigree",
+    "age"
+  ],
+  "feature_meta": {
+    "pregnancies": {
+      "label": "Pregnancies",
+      "min": 0,
+      "max": 15,
+      "step": 1,
+      "default": 1
+    },
+    "glucose": {
+      "label": "Glucose (mg/dL)",
+      "min": 60,
+      "max": 250,
+      "step": 1,
+      "default": 110
+    },
+    "blood_pressure": {
+      "label": "Blood Pressure (mm Hg)",
+      "min": 40,
+      "max": 140,
+      "step": 1,
+      "default": 72
+    },
+    "skin_thickness": {
+      "label": "Skin Thickness (mm)",
+      "min": 5,
+      "max": 60,
+      "step": 1,
+      "default": 25
+    },
+    "insulin": {
+      "label": "Insulin (mu U/mL)",
+      "min": 0,
+      "max": 400,
+      "step": 1,
+      "default": 80
+    },
+    "bmi": {
+      "label": "BMI",
+      "min": 15,
+      "max": 55,
+      "step": 0.1,
+      "default": 26.5
+    },
+    "diabetes_pedigree": {
+      "label": "Family History Score",
+      "min": 0.05,
+      "max": 2.5,
+      "step": 0.01,
+      "default": 0.4
+    },
+    "age": {
+      "label": "Age",
+      "min": 15,
+      "max": 90,
+      "step": 1,
+      "default": 33
+    }
+  },
+  "metrics": {
+    "accuracy": 0.74,
+    "precision": 0.609,
+    "recall": 0.722,
+    "f1": 0.661,
+    "roc_auc": 0.819
+  },
+  "production_model": "random_forest",
+  "model_comparison": {
+    "random_forest": {
+      "accuracy": 0.762,
+      "precision": 0.637,
+      "recall": 0.758,
+      "f1": 0.69,
+      "roc_auc": 0.836
+    },
+    "xgboost": {
+      "accuracy": 0.75,
+      "precision": 0.656,
+      "recall": 0.597,
+      "f1": 0.624,
+      "roc_auc": 0.816
+    },
+    "logistic_regression": {
+      "accuracy": 0.747,
+      "precision": 0.623,
+      "recall": 0.727,
+      "f1": 0.669,
+      "roc_auc": 0.836
+    }
+  }
+}

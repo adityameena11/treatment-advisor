@@ -1,0 +1,141 @@
+{
+  "feature_names": [
+    "age",
+    "sex",
+    "cp",
+    "trestbps",
+    "chol",
+    "fbs",
+    "restecg",
+    "thalach",
+    "exang",
+    "oldpeak",
+    "slope",
+    "ca",
+    "thal"
+  ],
+  "feature_meta": {
+    "age": {
+      "label": "Age",
+      "min": 20,
+      "max": 90,
+      "step": 1,
+      "default": 50
+    },
+    "sex": {
+      "label": "Sex (1=Male, 0=Female)",
+      "min": 0,
+      "max": 1,
+      "step": 1,
+      "default": 1
+    },
+    "cp": {
+      "label": "Chest Pain Type (0-3)",
+      "min": 0,
+      "max": 3,
+      "step": 1,
+      "default": 1
+    },
+    "trestbps": {
+      "label": "Resting Blood Pressure",
+      "min": 90,
+      "max": 200,
+      "step": 1,
+      "default": 130
+    },
+    "chol": {
+      "label": "Cholesterol (mg/dL)",
+      "min": 100,
+      "max": 400,
+      "step": 1,
+      "default": 240
+    },
+    "fbs": {
+      "label": "Fasting Blood Sugar > 120 (1=Yes)",
+      "min": 0,
+      "max": 1,
+      "step": 1,
+      "default": 0
+    },
+    "restecg": {
+      "label": "Resting ECG Result (0-2)",
+      "min": 0,
+      "max": 2,
+      "step": 1,
+      "default": 1
+    },
+    "thalach": {
+      "label": "Max Heart Rate Achieved",
+      "min": 70,
+      "max": 210,
+      "step": 1,
+      "default": 150
+    },
+    "exang": {
+      "label": "Exercise-Induced Angina (1=Yes)",
+      "min": 0,
+      "max": 1,
+      "step": 1,
+      "default": 0
+    },
+    "oldpeak": {
+      "label": "ST Depression (Exercise)",
+      "min": 0,
+      "max": 6.2,
+      "step": 0.1,
+      "default": 1.0
+    },
+    "slope": {
+      "label": "ST Segment Slope (0-2)",
+      "min": 0,
+      "max": 2,
+      "step": 1,
+      "default": 1
+    },
+    "ca": {
+      "label": "Major Vessels Colored (0-3)",
+      "min": 0,
+      "max": 3,
+      "step": 1,
+      "default": 0
+    },
+    "thal": {
+      "label": "Thalassemia (1-3)",
+      "min": 1,
+      "max": 3,
+      "step": 1,
+      "default": 2
+    }
+  },
+  "metrics": {
+    "accuracy": 0.82,
+    "precision": 0.84,
+    "recall": 0.75,
+    "f1": 0.792,
+    "roc_auc": 0.917
+  },
+  "production_model": "random_forest",
+  "model_comparison": {
+    "random_forest": {
+      "accuracy": 0.828,
+      "precision": 0.834,
+      "recall": 0.775,
+      "f1": 0.801,
+      "roc_auc": 0.911
+    },
+    "xgboost": {
+      "accuracy": 0.782,
+      "precision": 0.797,
+      "recall": 0.71,
+      "f1": 0.746,
+      "roc_auc": 0.876
+    },
+    "logistic_regression": {
+      "accuracy": 0.828,
+      "precision": 0.848,
+      "recall": 0.761,
+      "f1": 0.799,
+      "roc_auc": 0.89
+    }
+  }
+}
