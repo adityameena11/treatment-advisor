@@ -2,7 +2,7 @@
 // CONFIG - point this at your deployed backend URL before publishing.
 // Locally this matches `uvicorn main:app --port 8000`.
 // ---------------------------------------------------------------------------
-const API_BASE = "http://localhost:8000";
+const API_BASE = "https://treatment-advisor.onrender.com";
 
 const GAUGE_ARC_LENGTH = 267; // half-circumference of the gauge path, in SVG units
 const RISK_COLORS = { Low: "#4F7A5E", Moderate: "#B8863C", High: "#A8432B" };
